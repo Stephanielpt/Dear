@@ -15,6 +15,8 @@
 		125AE896212FA3CE007B0F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE895212FA3CE007B0F1B /* main.m */; };
 		125AE8A0212FA3CE007B0F1B /* dearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE89F212FA3CE007B0F1B /* dearTests.m */; };
 		125AE8AB212FA3CE007B0F1B /* dearUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8AA212FA3CE007B0F1B /* dearUITests.m */; };
+		125AE8BA21310611007B0F1B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8B921310611007B0F1B /* Note.m */; };
+		125AE8BD21310657007B0F1B /* OldNoteCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		125AE8A6212FA3CE007B0F1B /* dearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125AE8AA212FA3CE007B0F1B /* dearUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dearUITests.m; sourceTree = "<group>"; };
 		125AE8AC212FA3CE007B0F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125AE8B821310611007B0F1B /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		125AE8B921310611007B0F1B /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		125AE8BB21310657007B0F1B /* OldNoteCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldNoteCellTableViewCell.h; sourceTree = "<group>"; };
+		125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldNoteCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				125AE887212FA3CE007B0F1B /* AppDelegate.m */,
 				125AE889212FA3CE007B0F1B /* ViewController.h */,
 				125AE88A212FA3CE007B0F1B /* ViewController.m */,
+				125AE8B821310611007B0F1B /* Note.h */,
+				125AE8B921310611007B0F1B /* Note.m */,
+				125AE8BB21310657007B0F1B /* OldNoteCellTableViewCell.h */,
+				125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */,
 				125AE88C212FA3CE007B0F1B /* Main.storyboard */,
 				125AE88F212FA3CE007B0F1B /* Assets.xcassets */,
 				125AE891212FA3CE007B0F1B /* LaunchScreen.storyboard */,
@@ -267,7 +277,9 @@
 			files = (
 				125AE88B212FA3CE007B0F1B /* ViewController.m in Sources */,
 				125AE896212FA3CE007B0F1B /* main.m in Sources */,
+				125AE8BD21310657007B0F1B /* OldNoteCellTableViewCell.m in Sources */,
 				125AE888212FA3CE007B0F1B /* AppDelegate.m in Sources */,
+				125AE8BA21310611007B0F1B /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
