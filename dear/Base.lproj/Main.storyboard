@@ -33,6 +33,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrQ-r8-HCM">
+                                            <rect key="frame" x="164" y="120" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <segue destination="LrA-pB-5KI" kind="show" id="Uua-0l-QYk"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -84,5 +92,199 @@
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="132.68365817091455"/>
         </scene>
+        <!--Teach View Controller-->
+        <scene sceneID="vqa-6r-pCb">
+            <objects>
+                <viewController id="LrA-pB-5KI" customClass="TeachViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HpW-Xg-Mb6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-19-ANU">
+                                <rect key="frame" x="60" y="75" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dog"/>
+                                <connections>
+                                    <action selector="dogButton:" destination="LrA-pB-5KI" eventType="touchUpInside" id="Y56-Bk-v95"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Animal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaK-i5-YvA">
+                                <rect key="frame" x="129" y="32" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-c4-zSC">
+                                <rect key="frame" x="129" y="152" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-Sx-7Hg">
+                                <rect key="frame" x="275" y="75" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Owl"/>
+                                <connections>
+                                    <action selector="owlButton:" destination="LrA-pB-5KI" eventType="touchUpInside" id="j2i-BP-X8t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jm3-Cn-wmT"/>
+                    </view>
+                    <connections>
+                        <outlet property="stateLabel" destination="WQJ-c4-zSC" id="Z0U-Ot-K4a"/>
+                        <segue destination="X3c-4A-1jf" kind="show" identifier="AnimalToFoodSegue" id="01W-Wb-a7o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5m-uU-ziu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Food View Controller-->
+        <scene sceneID="uXE-qN-rcu">
+            <objects>
+                <viewController id="X3c-4A-1jf" customClass="FoodViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AhR-Gs-p4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piz" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-6a-NmB">
+                                <rect key="frame" x="52" y="91" width="82" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KxH-Zl-ygV" appends="YES" id="FZu-6b-1hR"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice" translatesAutoresizingMaskIntoConstraints="NO" id="BSk-BE-awF">
+                                <rect key="frame" x="241" y="91" width="82" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Byz-7A-pCu" appends="YES" id="z2b-QC-leg"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-40-Ykh">
+                                <rect key="frame" x="166" y="246" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akC-pv-ULz">
+                                <rect key="frame" x="97" y="35" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HHQ-V7-fyW"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="e6b-40-Ykh" id="hKM-3J-Jc0"/>
+                        <segue destination="jhY-tV-QvA" kind="show" identifier="FoodToColorSegue" id="VpK-B5-XqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wD6-tx-S8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KxH-Zl-ygV" userLabel="pizzaTap">
+                    <connections>
+                        <action selector="pizzaButton:" destination="X3c-4A-1jf" id="Kfi-vX-Tgy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Byz-7A-pCu" userLabel="iceTap">
+                    <connections>
+                        <action selector="iceButton:" destination="X3c-4A-1jf" id="IsI-ql-oQ6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="7vO-3q-SsX">
+            <objects>
+                <viewController id="jhY-tV-QvA" customClass="ColorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gPU-RK-DCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIJ-Gk-lfs">
+                                <rect key="frame" x="97" y="41" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N17-WH-hrC">
+                                <rect key="frame" x="70" y="125" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rose"/>
+                                <connections>
+                                    <action selector="roseButton:" destination="jhY-tV-QvA" eventType="touchUpInside" id="f3b-zW-U1m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-4H-GQ0">
+                                <rect key="frame" x="231" y="125" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gold"/>
+                                <connections>
+                                    <action selector="goldButton:" destination="jhY-tV-QvA" eventType="touchUpInside" id="0A7-5z-2p3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ah-1f-LGA">
+                                <rect key="frame" x="111" y="234" width="153" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nh2-cc-9SH"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="0ah-1f-LGA" id="8r3-Um-WXl"/>
+                        <segue destination="Hwo-gP-Cys" kind="show" identifier="ColorToScoreSegue" id="Cc3-vP-gg2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPp-Oq-n1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="138.98050974512745"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="Zbi-6g-JfH">
+            <objects>
+                <viewController id="Hwo-gP-Cys" customClass="ScoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7o-Vd-DLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-fN-z81">
+                                <rect key="frame" x="44" y="171" width="287" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UmR-8B-aUD"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="ndQ-fN-z81" id="Mkz-F7-MdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8r-UB-f9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3176.8000000000002" y="136.28185907046478"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ice" width="266" height="190"/>
+        <image name="piz" width="225" height="225"/>
+    </resources>
 </document>

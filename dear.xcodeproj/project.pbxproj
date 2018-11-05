@@ -17,6 +17,10 @@
 		125AE8AB212FA3CE007B0F1B /* dearUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8AA212FA3CE007B0F1B /* dearUITests.m */; };
 		125AE8BA21310611007B0F1B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8B921310611007B0F1B /* Note.m */; };
 		125AE8BD21310657007B0F1B /* OldNoteCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */; };
+		12849D4C218FB58F000EB729 /* TeachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12849D4B218FB58F000EB729 /* TeachViewController.m */; };
+		12849D4F218FC531000EB729 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12849D4E218FC531000EB729 /* FoodViewController.m */; };
+		12849D52218FC8A8000EB729 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12849D51218FC8A8000EB729 /* ColorViewController.m */; };
+		12849D55218FCA45000EB729 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12849D54218FCA45000EB729 /* ScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,14 @@
 		125AE8B921310611007B0F1B /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		125AE8BB21310657007B0F1B /* OldNoteCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldNoteCellTableViewCell.h; sourceTree = "<group>"; };
 		125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldNoteCellTableViewCell.m; sourceTree = "<group>"; };
+		12849D4A218FB58F000EB729 /* TeachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachViewController.h; sourceTree = "<group>"; };
+		12849D4B218FB58F000EB729 /* TeachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachViewController.m; sourceTree = "<group>"; };
+		12849D4D218FC531000EB729 /* FoodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		12849D4E218FC531000EB729 /* FoodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		12849D50218FC8A8000EB729 /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		12849D51218FC8A8000EB729 /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		12849D53218FCA45000EB729 /* ScoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		12849D54218FCA45000EB729 /* ScoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +123,20 @@
 				125AE887212FA3CE007B0F1B /* AppDelegate.m */,
 				125AE889212FA3CE007B0F1B /* ViewController.h */,
 				125AE88A212FA3CE007B0F1B /* ViewController.m */,
+				12849D4A218FB58F000EB729 /* TeachViewController.h */,
+				12849D4B218FB58F000EB729 /* TeachViewController.m */,
 				125AE8B821310611007B0F1B /* Note.h */,
 				125AE8B921310611007B0F1B /* Note.m */,
 				125AE8BB21310657007B0F1B /* OldNoteCellTableViewCell.h */,
 				125AE8BC21310657007B0F1B /* OldNoteCellTableViewCell.m */,
 				125AE88C212FA3CE007B0F1B /* Main.storyboard */,
 				125AE88F212FA3CE007B0F1B /* Assets.xcassets */,
+				12849D4D218FC531000EB729 /* FoodViewController.h */,
+				12849D4E218FC531000EB729 /* FoodViewController.m */,
+				12849D50218FC8A8000EB729 /* ColorViewController.h */,
+				12849D51218FC8A8000EB729 /* ColorViewController.m */,
+				12849D53218FCA45000EB729 /* ScoreViewController.h */,
+				12849D54218FCA45000EB729 /* ScoreViewController.m */,
 				125AE891212FA3CE007B0F1B /* LaunchScreen.storyboard */,
 				125AE894212FA3CE007B0F1B /* Info.plist */,
 				125AE895212FA3CE007B0F1B /* main.m */,
@@ -275,10 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12849D4C218FB58F000EB729 /* TeachViewController.m in Sources */,
 				125AE88B212FA3CE007B0F1B /* ViewController.m in Sources */,
 				125AE896212FA3CE007B0F1B /* main.m in Sources */,
+				12849D55218FCA45000EB729 /* ScoreViewController.m in Sources */,
 				125AE8BD21310657007B0F1B /* OldNoteCellTableViewCell.m in Sources */,
 				125AE888212FA3CE007B0F1B /* AppDelegate.m in Sources */,
+				12849D4F218FC531000EB729 /* FoodViewController.m in Sources */,
+				12849D52218FC8A8000EB729 /* ColorViewController.m in Sources */,
 				125AE8BA21310611007B0F1B /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
